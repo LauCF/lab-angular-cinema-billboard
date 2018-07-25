@@ -1,0 +1,17 @@
+<p>
+  my-home-component works!
+</p>
+
+<img src="https://cdn-images-1.medium.com/max/1200/1*69RcxrWXuk385lSxkIYYLA.png" width="100">
+
+<h2>CINEMA</h2>
+
+<div *ngFor="let m of movieList">
+  <p>ROOM {{m.room}}</p>
+  <img src="{{m.poster}}" width="100">
+  <p>Title: {{m.title}}</p>
+  <!-- <button (click)="getMovie(movie, id.value)">Go To Id Movie</button> -->
+  <a [routerLink]="['/movie', m.id]">View Details</a>
+  <br>
+</div>
+  

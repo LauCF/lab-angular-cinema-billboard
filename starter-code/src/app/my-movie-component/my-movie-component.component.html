@@ -1,0 +1,25 @@
+<p>
+  my-movie-component works!
+</p>
+
+<img src="https://cdn-images-1.medium.com/max/1200/1*69RcxrWXuk385lSxkIYYLA.png" width="100">
+
+<h2>CINEMA</h2>
+
+<div>
+  <p>ROOM {{movie.room}}</p>
+  <p>Title: {{movie.title}}</p>
+  <img src="{{movie.poster}}" width="100">
+  <p>Genres {{movie.genres}}</p>
+  <p>Year {{movie.year}}</p>
+  <p>Director {{movie.director}}</p>
+  <p>Actors {{movie.actors}}</p>
+  <p>Hours {{movie.hours}}</p>
+  <p>Synopsis {{movie.synopsis}}</p>
+  <a [routerLink]="['/']">Home</a>
+  <br>
+</div>
+
+<!-- {{movie | json}}
+{{movie.room}}
+{{movie.title}} -->
